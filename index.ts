@@ -27,7 +27,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // wellcome
 app.get("/", (req, res) => {
-  res.send("Welcome to the CRUD API");
+  res.send("Welcome to the CRUD APIs");
 });
 
 // routes
