@@ -6,14 +6,14 @@ const TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWFiMTAzZi05
 const API_URL = "http://localhost:3000/api/categories";
 
 const categories = [
-  { name: "Men", description: "Men's Fashion Collection", image: "men.jpg" },
-  { name: "Women", description: "Women's Fashion Collection", image: "women-150x150.jpg" },
-  { name: "Shoes", description: "Footwear Collection", image: "Shoes-150x150.jpg" },
-  { name: "Bags & Backpacks", description: "Bags and Backpacks", image: "Bags-150x150.png" },
-  { name: "Watches", description: "Watch Collection", image: "Watch-150x150.jpg" },
-  { name: "Jewellery", description: "Jewelry Collection", image: "Jewellery-150x150.jpg" },
-  { name: "Accessories", description: "Fashion Accessories", image: "Accessories-150x150.jpg" },
-  { name: "Tops", description: "Tops Collection", image: "Women-Khaki-Solid-Top-150x150.jpg" },
+  { name: "Men", description: "Men's Fashion Collection", image: "men.jpg", tag: "fashion-categories" },
+  { name: "Women", description: "Women's Fashion Collection", image: "women-150x150.jpg", tag: "fashion-categories" },
+  { name: "Shoes", description: "Footwear Collection", image: "Shoes-150x150.jpg", tag: "fashion-categories" },
+  { name: "Bags & Backpacks", description: "Bags and Backpacks", image: "Bags-150x150.png", tag: "fashion-categories" },
+  { name: "Watches", description: "Watch Collection", image: "Watch-150x150.jpg", tag: "fashion-categories" },
+  { name: "Jewellery", description: "Jewelry Collection", image: "Jewellery-150x150.jpg", tag: "fashion-categories" },
+  { name: "Accessories", description: "Fashion Accessories", image: "Accessories-150x150.jpg", tag: "fashion-categories" },
+  { name: "Tops", description: "Tops Collection", image: "Women-Khaki-Solid-Top-150x150.jpg", tag: "fashion-categories" },
 ];
 
 async function uploadCategories() {
@@ -29,6 +29,9 @@ async function uploadCategories() {
       const form = new FormData();
       form.append('name', category.name);
       form.append('description', category.description);
+      if (category.tag) {
+        form.append('tag', category.tag);
+      }
       form.append('image', fs.createReadStream(imagePath));
 
       const response = await fetch(API_URL, {

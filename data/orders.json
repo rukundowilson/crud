@@ -1,0 +1,321 @@
+[
+  {
+    "id": "b383ba45-657a-4478-8c38-f410cb0d7683",
+    "userId": "4fa6aa7f-ce51-4b35-a8c4-2df70196cfe6",
+    "items": [
+      {
+        "productId": 1769587220364,
+        "title": "Women Off White Printed Blouson Top",
+        "price": "100.00",
+        "quantity": 2,
+        "image": "https://res.cloudinary.com/dvougufzm/image/upload/v1769767802/products/yhfwqx2qhbrvrugyvz5q.jpg"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "companyName": "",
+      "streetAddress": "",
+      "apartment": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "country": "United States"
+    },
+    "subtotal": 200,
+    "shipping": 5,
+    "total": 205,
+    "status": "completed",
+    "createdAt": "2026-01-30T12:30:12.581Z"
+  },
+  {
+    "id": "b26bc3d4-50fe-4418-8d75-9e4a7275d7fd",
+    "userId": "4fa6aa7f-ce51-4b35-a8c4-2df70196cfe6",
+    "items": [
+      {
+        "productId": 1769587220364,
+        "title": "Women Off White Printed Blouson Top",
+        "price": "100.00",
+        "quantity": 1,
+        "image": "https://res.cloudinary.com/dvougufzm/image/upload/v1769767802/products/yhfwqx2qhbrvrugyvz5q.jpg"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "companyName": "",
+      "streetAddress": "",
+      "apartment": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "country": "United States"
+    },
+    "subtotal": 100,
+    "shipping": 5,
+    "total": 105,
+    "status": "completed",
+    "createdAt": "2026-01-30T12:49:40.169Z"
+  },
+  {
+    "id": "47b3746a-3851-4313-83dc-ce889b6bd05f",
+    "userId": "4fa6aa7f-ce51-4b35-a8c4-2df70196cfe6",
+    "items": [
+      {
+        "productId": 1769587220364,
+        "title": "Women Off White Printed Blouson Top",
+        "price": "100.00",
+        "quantity": 2,
+        "image": "https://res.cloudinary.com/dvougufzm/image/upload/v1769767802/products/yhfwqx2qhbrvrugyvz5q.jpg"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "companyName": "",
+      "streetAddress": "",
+      "apartment": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "country": "United States"
+    },
+    "subtotal": 200,
+    "shipping": 5,
+    "total": 205,
+    "status": "completed",
+    "createdAt": "2026-01-30T14:49:43.147Z"
+  },
+  {
+    "id": "e03de7c8-ee98-4cf5-9046-ac189bc5bea5",
+    "userId": "4fa6aa7f-ce51-4b35-a8c4-2df70196cfe6",
+    "items": [
+      {
+        "productId": "1769547588699",
+        "name": "Men Hooded Navy Blue & Grey T-Shirt",
+        "price": 70,
+        "quantity": 1,
+        "image": "https://res.cloudinary.com/dvougufzm/image/upload/v1769547587/products/nwpwl9seqjuclbawjtde.jpg",
+        "category": "T-SHIRTS",
+        "description": "Regular Fit.\r\nFull sleeves.\r\n70% cotton, 30% polyester.\r\nEasy to wear and versatile as Casual.\r\nMachine wash, tumble dry."
+      }
+    ],
+    "billingDetails": {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "country": "United States"
+    },
+    "subtotal": 70,
+    "shipping": 5,
+    "total": 75,
+    "status": "delivered",
+    "createdAt": "2026-01-31T11:43:53.013Z"
+  },
+  {
+    "id": "4f5419a4-a65d-4a73-a94c-ac309d4924e8",
+    "userId": "4fa6aa7f-ce51-4b35-a8c4-2df70196cfe6",
+    "items": [
+      {
+        "productId": "1769547830874",
+        "name": "Men Navy & Red Checked Slim Fit Casual Shirt",
+        "price": 40,
+        "quantity": 3,
+        "image": "https://res.cloudinary.com/dvougufzm/image/upload/v1769547830/products/tw5rao1fhqzt8ryflbw0.jpg",
+        "category": "shirts",
+        "description": "Regular Fit.\r\nFull sleeves.\r\n80% cotton, 20% polyester.\r\nEasy to wear and versatile as Casual.\r\nMachine wash, tumble dry."
+      }
+    ],
+    "billingDetails": {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "country": "United States"
+    },
+    "subtotal": 120,
+    "shipping": 5,
+    "total": 125,
+    "status": "delivered",
+    "createdAt": "2026-01-31T20:01:57.881Z"
+  },
+  {
+    "id": "0f04033b-1ba4-4431-91ad-f2e6feabd408",
+    "userId": "4fa6aa7f-ce51-4b35-a8c4-2df70196cfe6",
+    "items": [
+      {
+        "productId": "1769587220364",
+        "name": "Women Off White Printed Blouson Top",
+        "price": 100,
+        "quantity": 1,
+        "image": "https://res.cloudinary.com/dvougufzm/image/upload/v1769767802/products/yhfwqx2qhbrvrugyvz5q.jpg",
+        "category": "SHORTS & SKIRTS",
+        "description": "Regular Fit.\r\nShort sleeves.\r\n100% cotton.\r\nEasy to wear and versatile as Casual.\r\nMachine wash, tumble dry."
+      }
+    ],
+    "billingDetails": {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "country": "United States"
+    },
+    "subtotal": 100,
+    "shipping": 5,
+    "total": 105,
+    "status": "completed",
+    "createdAt": "2026-01-31T20:28:15.150Z"
+  },
+  {
+    "id": "1e46b54b-7775-4f9c-bd63-af6a5f0aa54e",
+    "userId": "4fa6aa7f-ce51-4b35-a8c4-2df70196cfe6",
+    "items": [
+      {
+        "productId": "1769547588699",
+        "name": "Men Hooded Navy Blue & Grey T-Shirt",
+        "price": 70,
+        "quantity": 6,
+        "image": "https://res.cloudinary.com/dvougufzm/image/upload/v1769547587/products/nwpwl9seqjuclbawjtde.jpg",
+        "category": "T-SHIRTS",
+        "description": "Regular Fit.\r\nFull sleeves.\r\n70% cotton, 30% polyester.\r\nEasy to wear and versatile as Casual.\r\nMachine wash, tumble dry."
+      }
+    ],
+    "billingDetails": {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "country": "United States"
+    },
+    "subtotal": 420,
+    "shipping": 5,
+    "total": 425,
+    "status": "completed",
+    "createdAt": "2026-01-31T20:29:24.328Z"
+  },
+  {
+    "id": "9d239ed5-5b69-4d5e-a56b-34b3b7f4acc2",
+    "userId": "4fa6aa7f-ce51-4b35-a8c4-2df70196cfe6",
+    "items": [
+      {
+        "productId": "1769547588699",
+        "name": "Men Hooded Navy Blue & Grey T-Shirt",
+        "price": 70,
+        "quantity": 2,
+        "image": "https://res.cloudinary.com/dvougufzm/image/upload/v1769547587/products/nwpwl9seqjuclbawjtde.jpg",
+        "category": "T-SHIRTS",
+        "description": "Regular Fit.\r\nFull sleeves.\r\n70% cotton, 30% polyester.\r\nEasy to wear and versatile as Casual.\r\nMachine wash, tumble dry."
+      },
+      {
+        "productId": "1769547830874",
+        "name": "Men Navy & Red Checked Slim Fit Casual Shirt",
+        "price": 40,
+        "quantity": 1,
+        "image": "https://res.cloudinary.com/dvougufzm/image/upload/v1769547830/products/tw5rao1fhqzt8ryflbw0.jpg",
+        "category": "shirts",
+        "description": "Regular Fit.\r\nFull sleeves.\r\n80% cotton, 20% polyester.\r\nEasy to wear and versatile as Casual.\r\nMachine wash, tumble dry."
+      }
+    ],
+    "billingDetails": {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "country": "United States"
+    },
+    "subtotal": 180,
+    "shipping": 5,
+    "total": 185,
+    "status": "pending",
+    "createdAt": "2026-02-01T18:38:15.197Z"
+  },
+  {
+    "id": "53ffaa86-122e-468c-aecb-b3cc14ceb076",
+    "userId": "4fa6aa7f-ce51-4b35-a8c4-2df70196cfe6",
+    "items": [
+      {
+        "productId": "1769547588699",
+        "name": "Men Hooded Navy Blue & Grey T-Shirt",
+        "price": 70,
+        "quantity": 3,
+        "image": "https://res.cloudinary.com/dvougufzm/image/upload/v1769547587/products/nwpwl9seqjuclbawjtde.jpg",
+        "category": "T-SHIRTS",
+        "description": "Regular Fit.\r\nFull sleeves.\r\n70% cotton, 30% polyester.\r\nEasy to wear and versatile as Casual.\r\nMachine wash, tumble dry."
+      }
+    ],
+    "billingDetails": {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "country": "United States"
+    },
+    "subtotal": 210,
+    "shipping": 5,
+    "total": 215,
+    "status": "pending",
+    "createdAt": "2026-02-01T18:47:49.366Z"
+  },
+  {
+    "id": "20f1530b-eb72-4d2f-b9af-df5f5eb198f7",
+    "userId": "4fa6aa7f-ce51-4b35-a8c4-2df70196cfe6",
+    "items": [
+      {
+        "productId": "1769547588699",
+        "name": "Men Hooded Navy Blue & Grey T-Shirt",
+        "price": 70,
+        "quantity": 5,
+        "image": "https://res.cloudinary.com/dvougufzm/image/upload/v1769547587/products/nwpwl9seqjuclbawjtde.jpg",
+        "category": "T-SHIRTS",
+        "description": "Regular Fit.\r\nFull sleeves.\r\n70% cotton, 30% polyester.\r\nEasy to wear and versatile as Casual.\r\nMachine wash, tumble dry."
+      }
+    ],
+    "billingDetails": {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "country": "United States"
+    },
+    "subtotal": 350,
+    "shipping": 5,
+    "total": 355,
+    "status": "cancelled",
+    "createdAt": "2026-02-03T08:33:58.454Z"
+  }
+]

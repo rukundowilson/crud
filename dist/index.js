@@ -11,6 +11,7 @@ const categories_1 = __importDefault(require("./src/routes/categories"));
 const products_1 = __importDefault(require("./src/routes/products"));
 const cart_1 = __importDefault(require("./src/routes/cart"));
 const auth_1 = __importDefault(require("./src/routes/auth"));
+const orders_1 = __importDefault(require("./src/routes/orders"));
 const mongoConfig_1 = require("./src/data/mongoConfig");
 const swagger_1 = require("./src/config/swagger");
 dotenv_1.default.config();
@@ -25,13 +26,14 @@ app.use(express_1.default.json());
 app.use("/api-docs", swagger_ui_express_1.default.serve, swagger_ui_express_1.default.setup(swagger_1.swaggerSpec));
 // wellcome
 app.get("/", (req, res) => {
-    res.send("Welcome to the CRUD API");
+    res.send("Welcome to the CRUD APIs");
 });
 // routes
 app.use("/api/auth", auth_1.default);
 app.use("/api/categories", categories_1.default);
 app.use("/api/products", products_1.default);
 app.use("/api/cart/:userId", cart_1.default);
+app.use("/api/orders", orders_1.default);
 // Connect to MongoDB and start server
 async function startServer() {
     try {

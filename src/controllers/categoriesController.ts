@@ -64,7 +64,7 @@ export const getCategoryById = async (req: Request, res: Response) => {
  *     requestBody:
  *       required: true
  *       content:
- *         application/json:
+ *         multipart/form-data:
  *           schema:
  *             type: object
  *             required:
@@ -74,6 +74,12 @@ export const getCategoryById = async (req: Request, res: Response) => {
  *                 type: string
  *               description:
  *                 type: string
+ *               tag:
+ *                 type: string
+ *                 description: "Single tag string (e.g., 'fashion-categories')"
+ *               image:
+ *                 type: string
+ *                 format: binary
  *     responses:
  *       201:
  *         description: Category created
@@ -83,13 +89,14 @@ export const getCategoryById = async (req: Request, res: Response) => {
  *         description: Admin access required
  */
 export const createCategory = async (req: AuthRequest, res: Response) => {
-  const { name, description } = req.body as Partial<Category>;
+  const { name, description, tag } = req.body;
   if (!name) return res.status(400).json({ message: "Name is required" });
-  
-  const newCat: Category = { 
-    id: uuid(), 
-    name, 
+
+  const newCat: Category = {
+    id: uuid(),
+    name,
     description,
+    tag: tag || undefined,
     image: req.file?.path // Cloudinary returns path with secure URL
   };
   
@@ -115,7 +122,7 @@ export const createCategory = async (req: AuthRequest, res: Response) => {
  *     requestBody:
  *       required: true
  *       content:
- *         application/json:
+ *         multipart/form-data:
  *           schema:
  *             type: object
  *             properties:
@@ -123,6 +130,9 @@ export const createCategory = async (req: AuthRequest, res: Response) => {
  *                 type: string
  *               description:
  *                 type: string
+ *               tag:
+ *                 type: string
+ *                 description: "Single tag string for the category (e.g., 'fashion-categories')"
  *     responses:
  *       200:
  *         description: Category updated
@@ -133,13 +143,16 @@ export const createCategory = async (req: AuthRequest, res: Response) => {
  */
 export const updateCategory = async (req: AuthRequest, res: Response) => {
   const { id } = req.params;
-  const { name, description } = req.body as Partial<Category>;
+  const { name, description, tag } = req.body as any;
   const db = await connectMongo();
   const col = db.collection<Category>("categories");
   const category = await col.findOne({ id });
   if (!category) return res.status(404).json({ message: "Category not found" });
   if (name !== undefined) category.name = name;
   if (description !== undefined) category.description = description;
+  if (tag !== undefined) {
+    category.tag = tag || undefined;
+  }
   if (req.file?.path) category.image = req.file.path;
   await col.updateOne({ id }, { $set: category });
   res.json(category);

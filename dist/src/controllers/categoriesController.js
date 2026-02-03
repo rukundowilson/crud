@@ -60,7 +60,7 @@ exports.getCategoryById = getCategoryById;
  *     requestBody:
  *       required: true
  *       content:
- *         application/json:
+ *         multipart/form-data:
  *           schema:
  *             type: object
  *             required:
@@ -70,6 +70,12 @@ exports.getCategoryById = getCategoryById;
  *                 type: string
  *               description:
  *                 type: string
+ *               tag:
+ *                 type: string
+ *                 description: "Single tag string (e.g., 'fashion-categories')"
+ *               image:
+ *                 type: string
+ *                 format: binary
  *     responses:
  *       201:
  *         description: Category created
@@ -79,13 +85,14 @@ exports.getCategoryById = getCategoryById;
  *         description: Admin access required
  */
 const createCategory = async (req, res) => {
-    const { name, description } = req.body;
+    const { name, description, tag } = req.body;
     if (!name)
         return res.status(400).json({ message: "Name is required" });
     const newCat = {
         id: (0, uuid_1.v4)(),
         name,
         description,
+        tag: tag || undefined,
         image: req.file?.path // Cloudinary returns path with secure URL
     };
     await (0, store_1.addCategory)(newCat);
@@ -110,7 +117,7 @@ exports.createCategory = createCategory;
  *     requestBody:
  *       required: true
  *       content:
- *         application/json:
+ *         multipart/form-data:
  *           schema:
  *             type: object
  *             properties:
@@ -118,6 +125,9 @@ exports.createCategory = createCategory;
  *                 type: string
  *               description:
  *                 type: string
+ *               tag:
+ *                 type: string
+ *                 description: "Single tag string for the category (e.g., 'fashion-categories')"
  *     responses:
  *       200:
  *         description: Category updated
@@ -128,7 +138,7 @@ exports.createCategory = createCategory;
  */
 const updateCategory = async (req, res) => {
     const { id } = req.params;
-    const { name, description } = req.body;
+    const { name, description, tag } = req.body;
     const db = await (0, mongoConfig_1.connectMongo)();
     const col = db.collection("categories");
     const category = await col.findOne({ id });
@@ -138,6 +148,9 @@ const updateCategory = async (req, res) => {
         category.name = name;
     if (description !== undefined)
         category.description = description;
+    if (tag !== undefined) {
+        category.tag = tag || undefined;
+    }
     if (req.file?.path)
         category.image = req.file.path;
     await col.updateOne({ id }, { $set: category });

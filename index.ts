@@ -6,6 +6,7 @@ import categoriesRouter from "./src/routes/categories";
 import productsRouter from "./src/routes/products";
 import cartRouter from "./src/routes/cart";
 import authRouter from "./src/routes/auth";
+import ordersRouter from "./src/routes/orders";
 import { connectMongo } from "./src/data/mongoConfig";
 import { swaggerSpec } from "./src/config/swagger";
 
@@ -35,6 +36,7 @@ app.use("/api/auth", authRouter);
 app.use("/api/categories", categoriesRouter);
 app.use("/api/products", productsRouter);
 app.use("/api/cart/:userId", cartRouter);
+app.use("/api/orders", ordersRouter);
 
 // Connect to MongoDB and start server
 async function startServer() {
